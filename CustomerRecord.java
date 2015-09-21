@@ -34,3 +34,13 @@ public class CustomerRecord
 	}
 
 }
+
+public class compareCustomerRecord implements Comparator<E>
+{
+	public int compare(CustomerRecord x, CustomerRecord y)
+	{
+		int account1 = x.getAccountNum();
+		int account2 = y.getAccountNum();
+		return account1 - account2;
+	}
+}
