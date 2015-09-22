@@ -11,8 +11,19 @@ public class Sorter<E>
 
 	public void sort()
 	{
-		//Inster your favorite sorting algorithm here
-
+		ArrayList<E> sortedItems = new ArrayList<E>(items.size());
+		//Insert your favorite sorting algorithm here
+		int length = items.size();
+		for (int i = 0; i < length; i++) {
+			int smallestItemIndex;
+			for (int j = 0; j < items.size(); j++) {
+				if (comparator.comparePriority(items.get(smallestItemIndex), items.get(j)) <= 0) {
+					smallestItemIndex = j;
+				}
+			}
+			sortedItems.add(items.remove(j));
+			smallestItemIndex = 0;
+		}
 	}
 
 }
