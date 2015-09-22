@@ -1,0 +1,34 @@
+public class PriorityComparator<CustomerRecord> implements Comparator<CustomerRecord>
+{
+  /**
+    * Compares the priority of two CustomerRecords
+    *
+    */
+    public int compare( CustomerRecord cr1, CustomerRecord cr2 ) {
+      return cr1.getPriority() - cr2.getPriority;
+    }
+    
+    /**
+    * Compares the references of this Comparator to another. 
+    *
+    */
+    public boolean equals( PriorityComparator pc ) {
+      if ( this.equals( pc ) )
+        return true;
+    }
+    
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+}
