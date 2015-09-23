@@ -11,7 +11,17 @@ public class Sorter<E>
 
 	public void sort()
 	{
-		//Inster your favorite sorting algorithm here
+		//Insertion sort -- get familiar!
+		for ( int i = 1; i < items.size(); i++ )
+		{
+			E element = items.get(i);
+			int j;
+			for ( j = i - 1; j >= 0 && element.compare( items.get( j ) ) < 0; j-- )
+			{
+				items.set( j + 1, items.get( j ) );		//is this the correct set command?
+				items.set( j, element );
+			}
+		}
 
 	}
 
