@@ -22,6 +22,8 @@ public class CustomerRecord
 	public applyMoney(double amount) { amount_owed -= amount; }
 
 	public getAccountNum () { return account_num; }
+	
+	public getAmountOwed() {return amount_owed;}
 
 	public static CustomerRecord generateRandomRecord()
 	{
