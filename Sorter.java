@@ -6,7 +6,7 @@ public class Sorter<E>
 	private ArrayList<E> items;
 	private Comparator<E> comparator;
 
-	publi Sorter(ArrayList<E> i, Comparator<E> c)
+	public Sorter(ArrayList<E> i, Comparator<E> c)
 	{
 		this.items = i;
 		this.comparator = c;
