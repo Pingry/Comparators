@@ -1,4 +1,4 @@
-public class PriorityComparator<CustomerRecord> implements Comparator<CustomerRecord>
+public class PriorityComparator implements Comparator<CustomerRecord>
 {
 	/**
   	* Compares the priority of two CustomerRecords
