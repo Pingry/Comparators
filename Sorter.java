@@ -22,7 +22,7 @@ public class Sorter<E>
 		{
 			for(int j=0; j<items.size(); i++)
 			{
-				if(comparator.compare(items.get(i).getPriority, items.get(holder).getPriority)>0)
+				if(comparator.compare(items.get(i), items.get(holder))>0)
 				{
 					holder = j;
 				}
