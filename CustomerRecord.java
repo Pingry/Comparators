@@ -1,36 +1,14 @@
-public class CustomerRecord
+import java.util.Comparator;
+public class compareCustomerRecord implements Comparator<CustomerRecord>
 {
-	private int account_num;
-	private double amount_owed;
-	private int priority;
-
-	private static int next_account_num = 1;
-
-	public CustomerRecord()
+	public int compare(CustomerRecord a, CustomerRecord b)
++	{
++		int acc1 = a.getPriority();
++		int acc2 = b.getPriority();
++		return acc1 - acc2;
++	}
+	public equalPriority compare(CustomerRecord a, CustomerRecord b)
 	{
-		account_num = next_account_num;
-		next_account_num++;
-		amount_owed = 0.0;
-		priority = 10;
+		return a.getPriority()==b.getPriority();
 	}
-
-
-	public setPriority(int new_priority) { priority = new_priority; }
-
-	public getPriority() { return priority; }
-
-	public applyMoney(double amount) { amount_owed -= amount; }
-
-	public getAccountNum () { return account_num; }
-
-	public static CustomerRecord generateRandomRecord()
-	{
-		double random = (Math.random() * 1000000) * -1;
-		CustomerRecord cr = new CustomerRecord();
-		cr.applyMoney(random);
-		cr.setPriority((int) (Math.random() * 10) + 1);
-		return cr;
-
-	}
-
 }
