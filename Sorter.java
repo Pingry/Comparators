@@ -1,9 +1,11 @@
+import java.util.*; 			//gets rid of Comparable errors, imports it? also imports ArrayList.
+
 public class Sorter<E>
 {
 	private ArrayList<E> items;
 	private Comparator<E> comparator;
 
-	public class Sorter(ArrayList<E> i, Comparator<E> c)
+	public Sorter(ArrayList<E> i, Comparator<E> c)
 	{
 		this.items = i;
 		this.comparator = c;
