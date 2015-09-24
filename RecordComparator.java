@@ -5,8 +5,8 @@ public class RecordComparator implements Comparator<CustomerRecord>
 		return cr1.getPriority()-cr2.getPriority();
 	}
 	
-	public boolean equals(CustomerRecord cr1, CustomerRecord cr2)
+	public boolean equals(CustomerRecord cr1)
 	{
-		return cr1.getPriority()==cr2.getPriority();
+		return this.getPriority()==cr1.getPriority();
 	}
 }
