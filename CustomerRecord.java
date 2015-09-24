@@ -15,13 +15,15 @@ public class CustomerRecord
 	}
 
 
-	public setPriority(int new_priority) { priority = new_priority; }
+	public void setPriority(int new_priority) { priority = new_priority; }
+	
+	public double getAmountOwed() { return amount_owed; }
 
-	public getPriority() { return priority; }
+	public int getPriority() { return priority; }
 
-	public applyMoney(double amount) { amount_owed -= amount; }
+	public void applyMoney(double amount) { amount_owed -= amount; }
 
-	public getAccountNum () { return account_num; }
+	public int getAccountNum () { return account_num; }
 
 	public static CustomerRecord generateRandomRecord()
 	{
@@ -30,7 +32,11 @@ public class CustomerRecord
 		cr.applyMoney(random);
 		cr.setPriority((int) (Math.random() * 10) + 1);
 		return cr;
-
+	}
+	
+	public String toString()
+	{
+		return amount_owed + "";
 	}
 
 }
