@@ -17,11 +17,11 @@ public class CustomerRecord
 
 	public setPriority(int new_priority) { priority = new_priority; }
 
-	public getPriority() { return priority; }
+	public int getPriority() { return priority; }
 
 	public applyMoney(double amount) { amount_owed -= amount; }
 
-	public getAccountNum () { return account_num; }
+	public int getAccountNum () { return account_num; }
 
 	public static CustomerRecord generateRandomRecord()
 	{
