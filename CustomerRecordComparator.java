@@ -9,5 +9,10 @@ public class CustomerRecordComparator extends CustomerRecord implements Comparat
       {
           return c1.getPriority() - c2.getPriority();
       }
+      
+      public boolean equals (CustomerRecord c1, CustomerRecord c2)
+      {
+            return c1.getPriority()==c2.getPriority();
+      }
   
 }
