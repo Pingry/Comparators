@@ -1,6 +1,6 @@
 import java.util.Comparator;
 
-public class CustomerRecordComparator extends CustomerRecord implements Comparator<CustomerRecord>
+public class CustomerRecordComparator implements Comparator<CustomerRecord>
 {
       //Returns a positive number if customer 1's priority is higher than customer 2's priority
       //Returns 0  if customer 1's priority is the same as customer 2's priority
