@@ -17,6 +17,7 @@ public class PriorityComparator<CustomerRecord> implements Comparator<CustomerRe
     	{
     		if ( this.equals( pc ) )
     			return true;
+    		return false;
     	}
     
 }
