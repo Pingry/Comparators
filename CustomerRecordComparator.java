@@ -9,9 +9,9 @@ public class CustomerRecordComparator implements Comparator<CustomerRecord>
 				
 	}
 	
-	public boolean equal(int accnum)//returns if the accounts in question are the same one
+	public boolean equal(CustomerRecordComparator crc)//returns if the accounts in question are the same one
 	{
-		return CustomerRecord.getAccountNum() == accnum;
+		return this.equals(crc);
 	}
 	
 	
