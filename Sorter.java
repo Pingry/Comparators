@@ -18,7 +18,7 @@ public class Sorter<E>
 		{
 			E element = items.get(i);
 			int j;
-			for ( j = i - 1; j >= 0 && element.compare( items.get( j ) ) < 0; j-- )
+			for ( j = i - 1; j >= 0 && comparator.compare( element, items.get( j ) ) < 0; j-- )
 			{
 				items.set( j + 1, items.get( j ) );		//is this the correct set command?
 				items.set( j, element );
