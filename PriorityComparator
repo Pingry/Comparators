@@ -20,17 +20,3 @@ public class PriorityComparator<CustomerRecord> implements Comparator<CustomerRe
     	}
     
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-}
